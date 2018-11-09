@@ -2,6 +2,7 @@ package me.Jack;
 
 import java.util.Scanner;
 import me.Jack.Methods;
+import other.Jack.Assignments;
 
 //Assignment 7, 8, 9 for Jack Michie
 
@@ -21,7 +22,7 @@ public class Project {
     }
 
     //Done
-    public void Project02(){
+    private void Project02(){
         //Task 1
         int factorialI = 1;
         long factorialL = 1;
@@ -50,6 +51,7 @@ public class Project {
         }
     }
 
+    //TODO
     public void Project03(){
         //Just sout will do it later
         String[] names = {"JORDAN SASLOWSKI", "PAT ATAKI"};
@@ -126,7 +128,7 @@ public class Project {
     public void Project05(){
         //Ontario Speeding Fines
         Scanner scanner = new Scanner(System.in);
-        int postedSpeed = 0, speed = 0, zone, check;
+        int postedSpeed, speed, zone, check;
         double fine = 0;
         System.out.println("Enter speed limit");
         postedSpeed = scanner.nextInt();
@@ -136,7 +138,7 @@ public class Project {
         zone = scanner.nextInt();
         check = speed-postedSpeed;
         if(check <= 0){
-            fine = check*0;
+            fine = 0;
         } else if (check > 0 && check < 20){
             fine = check * 2.50;
         } else if (check >= 20 && check <= 29){
