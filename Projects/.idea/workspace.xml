@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="042f704c-4405-417d-bd2a-63570f8a04e3" name="Default Changelist" comment="" />
+    <list default="true" id="042f704c-4405-417d-bd2a-63570f8a04e3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/Jack/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/Jack/Project.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,33 +46,57 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1491714053">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1527" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1527" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaSkills" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/me/Jack/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="48" column="52" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="52" />
+            <state relative-caret-position="134">
+              <caret line="241" column="12" lean-forward="true" selection-start-line="241" selection-start-column="12" selection-end-line="241" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Project02#0;class#Project#0" />
                 <element signature="method#Project03#0;class#Project#0" />
                 <element signature="method#Project04#0;class#Project#0" />
                 <element signature="method#Project05#0;class#Project#0" />
-                <element signature="method#Project07#0;class#Project#0" />
+                <element signature="method#Project08#0;class#Project#0" />
+                <element signature="method#Project09#0;class#Project#0" />
+                <element signature="method#Project10#0;class#Project#0" />
+                <element signature="method#Project11#0;class#Project#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/Jack/Methods.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -82,6 +109,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -105,6 +135,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,12 +152,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541788016943" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541877189422" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -198,16 +228,16 @@
     <frame x="-6" y="-6" width="1613" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Structure" order="0" sideWeight="0.5065693" side_tool="true" visible="true" weight="0.19099678" />
+      <window_info id="Structure" order="0" sideWeight="0.5103627" side_tool="true" visible="true" weight="0.19614148" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" sideWeight="0.5020408" side_tool="true" weight="0.25594854" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49343064" visible="true" weight="0.19099678" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.48963732" visible="true" weight="0.19614148" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.076819405" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47978437" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -235,24 +265,28 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Downloads/Central.java" />
-    <entry file="file://$PROJECT_DIR$/src/me/Jack/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="48" column="52" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Project03#0;class#Project#0" />
-            <element signature="method#Project04#0;class#Project#0" />
-            <element signature="method#Project05#0;class#Project#0" />
-            <element signature="method#Project07#0;class#Project#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/me/Jack/Methods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/Jack/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="241" column="12" lean-forward="true" selection-start-line="241" selection-start-column="12" selection-end-line="241" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Project02#0;class#Project#0" />
+            <element signature="method#Project03#0;class#Project#0" />
+            <element signature="method#Project04#0;class#Project#0" />
+            <element signature="method#Project05#0;class#Project#0" />
+            <element signature="method#Project08#0;class#Project#0" />
+            <element signature="method#Project09#0;class#Project#0" />
+            <element signature="method#Project10#0;class#Project#0" />
+            <element signature="method#Project11#0;class#Project#0" />
+          </folding>
         </state>
       </provider>
     </entry>

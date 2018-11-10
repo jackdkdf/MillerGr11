@@ -1,5 +1,6 @@
 package me.Jack;
 
+import java.util.HashMap;
 import java.util.Scanner;
 import me.Jack.Methods;
 
@@ -8,12 +9,12 @@ import me.Jack.Methods;
 public class Project {
     public static void main(String args[]){
         Project p = new Project();
-        p.Project02();
+        //p.Project02();
         //p.Project03();
         //p.Project04();
         //p.Project05();
         //p.Project06();
-        //p.Project07();
+        p.Project07();
         //p.Project08();
         //p.Project09();
         //p.Project10();
@@ -185,16 +186,79 @@ public class Project {
     //Done (On Macbook)
     public void Project06(){}
 
+
     public void Project07(){
+        //Declaring
+        Scanner scanner = new Scanner(System.in);
+        String amount;
+        double money=0, finalMoney = 0;
+
+        //Input
+        System.out.println("Enter the desired cheque amount in words");
+        amount = scanner.nextLine();
+
+        //List of numbers
+        final HashMap<String, Integer> numbers= new HashMap<>();
+        //List of number + ty
+        final HashMap<String, Integer> tynumbers = new HashMap<>();
+        //List of positive powers
+        final HashMap<String, Integer> posPowers = new HashMap<>();
+
+        numbers.put("zero", 0);
+        numbers.put("one", 1);
+        numbers.put("two", 2);
+        numbers.put("three", 3);
+        numbers.put("four", 4);
+        numbers.put("five", 5);
+        numbers.put("six", 6);
+        numbers.put("seven", 7);
+        numbers.put("eight", 8);
+        numbers.put("nine", 9);
+        numbers.put("ten", 10);
+        numbers.put("eleven", 11);
+        numbers.put("twelve", 12);
+        numbers.put("thirteen", 13);
+        numbers.put("fourteen", 14);
+        numbers.put("fifteen", 15);
+        numbers.put("sixteen", 16);
+        numbers.put("seventeen", 17);
+        numbers.put("eighteen", 18);
+        numbers.put("nineteen", 19);
+
+        tynumbers.put("twenty", 20);
+        tynumbers.put("thirty", 30);
+        tynumbers.put("forty", 40);
+        tynumbers.put("fifty", 50);
+        tynumbers.put("sixty", 60);
+        tynumbers.put("seventy", 70);
+        tynumbers.put("eighty", 80);
+        tynumbers.put("ninety", 90);
+
+        posPowers.put("hundred", 100);
+        posPowers.put("thousand", 1000);
+
+        String [] seperateNums = amount.toLowerCase().split(" ");
+        for(int i=0; i<seperateNums.length; i++){
+
+
+        }
+        System.out.println(money);
+    }
+
+    public void Project08(){
 
     }
 
-    public void Project08(){}
+    public void Project09(){
 
-    public void Project09(){}
+    }
 
-    public void Project10(){}
+    public void Project10(){
 
-    public void Project11(){}
+    }
+
+    public void Project11(){
+
+    }
 
 }
