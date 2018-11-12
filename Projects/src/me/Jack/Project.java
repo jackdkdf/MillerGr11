@@ -1,7 +1,5 @@
 package me.Jack;
 
-import java.sql.Array;
-import java.sql.SQLOutput;
 import java.util.*;
 import me.Jack.Methods;
 
@@ -13,10 +11,10 @@ public class Project {
         //p.Project04();
         //p.Project05();
         //p.Project06();
-        //p.Project07();
+        p.Project07();
         //p.Project08();
         //p.Project09();
-        p.Project10();
+        //p.Project10();
         //p.Project11();
         //p.Project12();
     }
@@ -249,15 +247,20 @@ public class Project {
 
         String [] nums = amount.toLowerCase().split(" ");
         for(int i=0; i<nums.length; i++){
+            //check if hundred comes before thousand
             if(numbers.get(nums[i]) != null){
                 amt += numbers.get(nums[i]);
             } else if (tynumbers.get(nums[i]) != null){
                 amt += tynumbers.get(nums[i]);
             } else if (posPowers.get(nums[i]) != null){
-                amt *= posPowers.get(nums[i]);
                 totalAmt += amt;
+                totalAmt *= posPowers.get(nums[i]);
+                //totalAmt += amt;
+                System.out.println("total " + totalAmt);
+                System.out.println("amt " + amt);
                 amt = 0;
             }
+            System.out.println("amt " + amt);
         }
 
         totalAmt+=amt;
@@ -265,14 +268,11 @@ public class Project {
         cents = cents.toLowerCase().replaceAll(" cents", "");
 
         System.out.println("$" + totalAmt + "." + cents);
-
-        //Reset variables
-        totalAmt = 0;
-        amt = 0;
     }
 
     //Pretty much done Ask about Count each occurrence of the letter combination "the"
-    public void Project08(){
+    public void Project08()
+    {
         int numE = 0, numi = 0, numI = 0, numVowels = 0;
 
         int numR = 0, numS = 0, numT = 0, numL = 0, numN = 0;
@@ -366,7 +366,7 @@ public class Project {
         Scanner scanner = new Scanner(System.in);
 
         Random r = new Random();
-        num = r.nextInt(10-1) + 1;
+        num = r.nextInt(1000-1) + 1;
 
         while(playAgain) {
             System.out.println("Enter a guess");
