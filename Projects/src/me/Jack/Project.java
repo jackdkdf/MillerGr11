@@ -1,11 +1,10 @@
 package me.Jack;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Scanner;
 import me.Jack.Methods;
-import other.Jack.Assignments;
-
-//Assignment 7, 8, 9 for Jack Michie
 
 public class Project {
     public static void main(String args[]){
@@ -15,7 +14,7 @@ public class Project {
         //p.Project04();
         //p.Project05();
         //p.Project06();
-        p.Project07();
+        //p.Project07();
         //p.Project08();
         //p.Project09();
         //p.Project10();
@@ -52,7 +51,7 @@ public class Project {
         }
     }
 
-    //TODO
+    //Close to finished have to format
     public void Project03(){
         //Just sout will do it later
         String[] names = {"JORDAN SASLOWSKI", "PAT ATAKI"};
@@ -188,12 +187,12 @@ public class Project {
     //Done (On Macbook)
     public void Project06(){}
 
-
+    //Done for the most part
     public void Project07(){
         //Declaring
         Scanner scanner = new Scanner(System.in);
-        String amount;
-        double money=0, finalMoney = 0;
+        String amount, dollars, cents;
+        int amt = 0, totalAmt = 0;
 
         //Input
         System.out.println("Enter the desired cheque amount in words");
@@ -239,16 +238,128 @@ public class Project {
         posPowers.put("hundred", 100);
         posPowers.put("thousand", 1000);
 
-        String [] seperateNums = amount.toLowerCase().split(" ");
-        for(int i=0; i<seperateNums.length; i++){
+        String [] split = amount.toLowerCase().split(" and ");
+        dollars = split[0];
+        cents = split[1];
 
+        System.out.println(dollars);
+        System.out.println(cents);
 
+        amount.toLowerCase().replaceAll(" dollars", "");
+
+        String [] nums = amount.toLowerCase().split(" ");
+        for(int i=0; i<nums.length; i++){
+            if(numbers.get(nums[i]) != null){
+                amt += numbers.get(nums[i]);
+            } else if (tynumbers.get(nums[i]) != null){
+                amt += tynumbers.get(nums[i]);
+            } else if (posPowers.get(nums[i]) != null){
+                amt *= posPowers.get(nums[i]);
+                totalAmt += amt;
+                amt = 0;
+            }
         }
-        System.out.println(money);
+
+        totalAmt+=amt;
+
+        cents = cents.toLowerCase().replaceAll(" cents", "");
+
+        System.out.println("$" + totalAmt + "." + cents);
+
+        //Reset variables
+        totalAmt = 0;
+        amt = 0;
     }
 
+    //Pretty much done Ask about Count each occurrence of the letter combination "the"
     public void Project08(){
+        int numE = 0, numi = 0, numI = 0, numVowels = 0;
 
+        int numR = 0, numS = 0, numT = 0, numL = 0, numN = 0;
+
+        List<Character> vowels = Arrays.asList('a', 'e', 'i', 'o', 'u', 'y');
+
+        String sVerse = "As we enter our centennial year we are still a young "
+                + "nation, very much in the formative stages. Our national condition "
+                + "is still flexible enough that we can make almost anything we wish "
+                + "of our nation. No other country is in a better position than Canada "
+                + "to go ahead with the evolution of a national purpose devoted to all "
+                + "that is good and noble and excellent in the human spirit. "
+                + "Canada is the only country in the world that knows how to live without "
+                + "an identity. "
+                + "Canadians, like their historians, have spent too much time remembering "
+                + "conflicts, crises, and failures. They forgot the great, quiet "
+                + "continuity of life in a vast and generous land. A cautious people "
+                + "learns from its past; a sensible people can face its future. "
+                + "Canadians, on the whole, are both. ";
+
+        String sVerse2 = "If the general attitude of Canadians toward their mighty neighbor to the south"
+        + "could be distilled into a single phrase, that phrase would probably be \"Oh, shut\""
+        + "up. The Americans talked too much, mainly about themselves. Their torrid love"
+        + "affair with their own history and legend exceeded - painfully - the quasi-British"
+        + "Canadian idea of modesty and self-restraint . . . They were forever busting their"
+        + "buttons in spasms of insufferable yahoo pride or all too publicly agonizing over"
+        + "their crises.";
+
+        String fullVerse = sVerse + sVerse2;
+
+        String lowercaseThe [] = fullVerse.split(" the ");
+        String uppercaseThe [] = fullVerse.split(" The ");
+        String lowercaseAnd [] = fullVerse.split(" and ");
+        String uppercaseAnd [] = fullVerse.split(" And ");
+
+        for(int i=0; i<fullVerse.length(); i++){
+            if(fullVerse.toLowerCase().charAt(i) == 'e') {
+                numE++;
+            } else if(fullVerse.charAt(i) == 'i'){
+                numi++;
+            } else if (fullVerse.charAt(i) == 'I'){
+                numI++;
+            }
+
+            for(int j=0; j<vowels.size(); j++){ //Count vowels
+                if(fullVerse.toLowerCase().charAt(i) == vowels.get(j)){
+                    numVowels++;
+                }
+            }
+        }
+
+        numR = Methods.checkAmtLetters(fullVerse, 'r');
+        numS = Methods.checkAmtLetters(fullVerse, 's');
+        numT = Methods.checkAmtLetters(fullVerse, 't');
+        numN = Methods.checkAmtLetters(fullVerse, 'n');
+        numL = Methods.checkAmtLetters(fullVerse, 'l');
+
+        System.out.println("Number of E " + numE);
+        System.out.println("Number of lowercase I " + numi);
+        System.out.println("Number of uppercase I " + numI);
+        System.out.println("Number of Vowels " + numVowels);
+        //Ask about Count each occurrence of the letter combination "the"
+        System.out.println("Number of lowercase The " + (lowercaseThe.length-1));
+        System.out.println("Number of uppercase The " + (uppercaseThe.length-1));
+        System.out.println("Number of lowercase And " + (lowercaseAnd.length-1));
+        System.out.println("Number of uppercase And " + (uppercaseAnd.length-1));
+
+        Methods.clearChat(2);
+
+        System.out.print("LETTER");
+
+        for(int i=0; i<(numR+numS+numT+numN+numL)/3; i++){
+            if(i % 5 == 0){
+                System.out.print(Methods.padL(""+i, 5));
+            }
+        }
+
+        Methods.tally(numE, 'E');
+        Methods.tally(numL, 'L');
+        Methods.tally(numN, 'N');
+        Methods.tally(numR, 'R');
+        Methods.tally(numS, 'S');
+        Methods.tally(numT, 'T');
+
+
+
+        //Count every the
     }
 
     public void Project09(){
@@ -260,6 +371,10 @@ public class Project {
     }
 
     public void Project11(){
+
+    }
+
+    public void Project12(){
 
     }
 
