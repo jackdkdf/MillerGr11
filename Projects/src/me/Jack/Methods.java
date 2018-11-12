@@ -1,6 +1,8 @@
 package me.Jack;
 
 import java.lang.reflect.Array;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Methods {
 

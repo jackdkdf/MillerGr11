@@ -1,9 +1,7 @@
 package me.Jack;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Scanner;
+import java.sql.SQLOutput;
+import java.util.*;
 import me.Jack.Methods;
 
 public class Project {
@@ -16,7 +14,7 @@ public class Project {
         //p.Project06();
         //p.Project07();
         //p.Project08();
-        //p.Project09();
+        p.Project09();
         //p.Project10();
         //p.Project11();
         //p.Project12();
@@ -359,7 +357,39 @@ public class Project {
         Methods.tally(numT, 'T');
     }
 
+    //Done
     public void Project09(){
+        int num, geusses = 0, guess;
+        boolean playAgain = true;
+
+        Scanner scanner = new Scanner(System.in);
+
+        Random r = new Random();
+        num = r.nextInt(10-1) + 1;
+
+        while(playAgain) {
+            System.out.println("Enter a guess");
+            guess = scanner.nextInt();
+            if(guess != num){
+                if (guess < 1 || guess > 1000){
+                    System.out.println("Please guess between 1 and 1000");
+                } else {
+                    if(guess > num){
+                        System.out.println("High");
+                    } else if (guess < num){
+                        System.out.println("Low");
+                    }
+                }
+            } else {
+                System.out.println("Do you want to play again? true or false");
+                if(scanner.nextBoolean() == true){
+                    playAgain = true;
+                } else if (scanner.nextBoolean() == false){
+                    playAgain = false;
+                }
+            }
+
+        }
 
     }
 
