@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="042f704c-4405-417d-bd2a-63570f8a04e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/Jack/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/Jack/Methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/Jack/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/Jack/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/other/Jack/Assignments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/Jack/Assignments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaSkills/me/Jack/Methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaSkills/me/Jack/Methods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaSkills/me/Jack/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaSkills/me/Jack/Project.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,14 +76,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2715" />
+          <entry key="JAVA" value="2799" />
+          <entry key="PLAIN_TEXT" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open" />
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2715" />
+          <entry key="java" value="2799" />
+          <entry key="txt" value="39" />
         </counts>
       </usages-collector>
     </session>
@@ -97,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/me/Jack/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="341" column="27" selection-start-line="341" selection-start-column="27" selection-end-line="341" selection-end-column="27" />
+            <state relative-caret-position="133">
+              <caret line="189" column="4" lean-forward="true" selection-start-line="189" selection-start-column="4" selection-end-line="189" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Project02#0;class#Project#0" />
@@ -106,6 +107,7 @@
                 <element signature="method#Project04#0;class#Project#0" />
                 <element signature="method#Project05#0;class#Project#0" />
                 <element signature="method#Project07#0;class#Project#0" />
+                <element signature="method#Project08#0;class#Project#0" />
               </folding>
             </state>
           </provider>
@@ -136,6 +138,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Jack Fountain &lt;jack@rockyroost.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -145,8 +152,8 @@
         <option value="$USER_HOME$/Downloads/Central.java" />
         <option value="$PROJECT_DIR$/src/Methods.java" />
         <option value="$PROJECT_DIR$/src/Project.java" />
-        <option value="$PROJECT_DIR$/src/me/Jack/Project.java" />
         <option value="$PROJECT_DIR$/src/me/Jack/Methods.java" />
+        <option value="$PROJECT_DIR$/src/me/Jack/Project.java" />
       </list>
     </option>
   </component>
@@ -183,7 +190,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541990998427" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541991225905" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -249,6 +256,14 @@
       <option name="presentableId" value="Default" />
       <updated>1540431279832</updated>
     </task>
+    <task id="LOCAL-00001" summary="Alomst finished Project 7 and 8">
+      <created>1541991028298</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541991028298</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -287,6 +302,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Alomst finished Project 7 and 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alomst finished Project 7 and 8" />
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -302,8 +321,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/Jack/Project.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="341" column="27" selection-start-line="341" selection-start-column="27" selection-end-line="341" selection-end-column="27" />
+        <state relative-caret-position="133">
+          <caret line="189" column="4" lean-forward="true" selection-start-line="189" selection-start-column="4" selection-end-line="189" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Project02#0;class#Project#0" />
@@ -311,6 +330,7 @@
             <element signature="method#Project04#0;class#Project#0" />
             <element signature="method#Project05#0;class#Project#0" />
             <element signature="method#Project07#0;class#Project#0" />
+            <element signature="method#Project08#0;class#Project#0" />
           </folding>
         </state>
       </provider>

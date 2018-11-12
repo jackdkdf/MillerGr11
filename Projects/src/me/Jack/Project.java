@@ -19,6 +19,7 @@ public class Project {
         //p.Project09();
         //p.Project10();
         //p.Project11();
+        //p.Project12();
     }
 
     //Done
@@ -356,10 +357,6 @@ public class Project {
         Methods.tally(numR, 'R');
         Methods.tally(numS, 'S');
         Methods.tally(numT, 'T');
-
-
-
-        //Count every the
     }
 
     public void Project09(){
