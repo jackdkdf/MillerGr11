@@ -11,8 +11,8 @@ public class Project {
         //p.Project04();
         //p.Project05();
         //p.Project06();
-        p.Project07();
-        //p.Project08();
+        //p.Project07();
+        p.Project08();
         //p.Project09();
         //p.Project10();
         //p.Project11();
@@ -271,8 +271,7 @@ public class Project {
     }
 
     //Pretty much done Ask about Count each occurrence of the letter combination "the"
-    public void Project08()
-    {
+    public void Project08() {
         int numE = 0, numi = 0, numI = 0, numVowels = 0;
 
         int numR = 0, numS = 0, numT = 0, numL = 0, numN = 0;
@@ -324,21 +323,22 @@ public class Project {
             }
         }
 
+        int numThe = (lowercaseThe.length-1)+(uppercaseThe.length-1);
+
         numR = Methods.checkAmtLetters(fullVerse, 'r');
         numS = Methods.checkAmtLetters(fullVerse, 's');
         numT = Methods.checkAmtLetters(fullVerse, 't');
         numN = Methods.checkAmtLetters(fullVerse, 'n');
         numL = Methods.checkAmtLetters(fullVerse, 'l');
-
-        System.out.println("Number of E " + numE);
-        System.out.println("Number of lowercase I " + numi);
-        System.out.println("Number of uppercase I " + numI);
-        System.out.println("Number of Vowels " + numVowels);
-        //Ask about Count each occurrence of the letter combination "the"
-        System.out.println("Number of lowercase The " + (lowercaseThe.length-1));
-        System.out.println("Number of uppercase The " + (uppercaseThe.length-1));
-        System.out.println("Number of lowercase And " + (lowercaseAnd.length-1));
-        System.out.println("Number of uppercase And " + (uppercaseAnd.length-1));
+        System.out.println("Number of E: " + numE);
+        System.out.println("Number of lowercase I: " + numi);
+        System.out.println("Number of uppercase I: " + numI);
+        System.out.println("Number of Vowels: " + numVowels);
+        System.out.println("Number of The: " + numThe);
+        System.out.println("Number of lowercase The: " + (lowercaseThe.length-1));
+        System.out.println("Number of uppercase The: " + (uppercaseThe.length-1));
+        System.out.println("Number of lowercase And: " + (lowercaseAnd.length-1));
+        System.out.println("Number of uppercase And: " + (uppercaseAnd.length-1));
 
         Methods.clearChat(2);
 
