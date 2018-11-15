@@ -11,8 +11,8 @@ public class Project {
         //p.Project04();
         //p.Project05();
         //p.Project06();
-        //p.Project07();
-        p.Project08();
+        p.Project07();
+        //p.Project08();
         //p.Project09();
         //p.Project10();
         //p.Project11();
@@ -240,6 +240,8 @@ public class Project {
         dollars = split[0];
         cents = split[1];
 
+        String [] check = amount.toLowerCase().split("thousand");
+
         System.out.println(dollars);
         System.out.println(cents);
 
@@ -253,14 +255,22 @@ public class Project {
             } else if (tynumbers.get(nums[i]) != null){
                 amt += tynumbers.get(nums[i]);
             } else if (posPowers.get(nums[i]) != null){
-                totalAmt += amt;
-                totalAmt *= posPowers.get(nums[i]);
-                //totalAmt += amt;
-                System.out.println("total " + totalAmt);
-                System.out.println("amt " + amt);
-                amt = 0;
+                if(amount.toLowerCase().contains("hundred") && amount.toLowerCase().contains("thousand")){
+                    if(check[0].contains("hundred")){
+                        totalAmt += amt;
+                        totalAmt *= posPowers.get(nums[i]);
+                        amt = 0;
+                    } else {
+                        amt *= posPowers.get(nums[i]);
+                        totalAmt += amt;
+                        amt = 0;
+                    }
+                } else {
+                    amt *= posPowers.get(nums[i]);
+                    totalAmt += amt;
+                    amt = 0;
+                }
             }
-            System.out.println("amt " + amt);
         }
 
         totalAmt+=amt;
@@ -270,8 +280,8 @@ public class Project {
         System.out.println("$" + totalAmt + "." + cents);
     }
 
-    //Pretty much done Ask about Count each occurrence of the letter combination "the"
-    public void Project08() {
+    //Done
+    public void Project08()  {
         int numE = 0, numi = 0, numI = 0, numVowels = 0;
 
         int numR = 0, numS = 0, numT = 0, numL = 0, numN = 0;
