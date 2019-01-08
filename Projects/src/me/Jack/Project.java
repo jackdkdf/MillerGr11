@@ -16,7 +16,7 @@ public class Project {
         //p.Project06();
         //p.Project07();
         //p.Project08();
-        p.Project09();
+        //p.Project09();
         //p.Project10();
         //p.Project11();
         //p.Project12();
@@ -188,7 +188,7 @@ public class Project {
         System.out.println("Your fine is $" + (fine+5));
     }
 
-    //Done (On Macbook)
+    //Done (On Apple Laptop)
     public void Project06(){}
 
     //Done for the most part
@@ -286,7 +286,7 @@ public class Project {
         System.out.println("$" + totalAmt + "." + cents);
     }
 
-    //Done
+    //Done (On Razer Laptop)
     public void Project08()  {
         int numE = 0, numi = 0, numI = 0, numVowels = 0;
 
@@ -457,6 +457,7 @@ public class Project {
         }
     }
 
+    //Done
     public void Project11(){
         boolean[] Doors = new boolean[101];
 
@@ -476,6 +477,7 @@ public class Project {
         }
     }
 
+    //Not Done
     public void Project12(){
 
     }
