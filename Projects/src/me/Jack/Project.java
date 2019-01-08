@@ -6,17 +6,19 @@ import me.Jack.Methods;
 public class Project {
     public static void main(String args[]){
         Project p = new Project();
+        Assignments a = new Assignments();
         //p.Project02();
         //p.Project03();
         //p.Project04();
         //p.Project05();
         //p.Project06();
-        p.Project07();
+        //p.Project07();
         //p.Project08();
         //p.Project09();
         //p.Project10();
         //p.Project11();
         //p.Project12();
+        a.Assignment22();
     }
 
     //Done
