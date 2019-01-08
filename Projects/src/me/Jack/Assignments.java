@@ -19,7 +19,6 @@ public class Assignments {
                 System.out.println("Door " + i + " is open.");
             }
         }
-
     }
 
 }
