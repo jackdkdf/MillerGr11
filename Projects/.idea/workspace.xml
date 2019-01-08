@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/me/Jack/Project.java" line="227" />
+    <bookmark url="file://$PROJECT_DIR$/src/me/Jack/Project.java" line="229" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042f704c-4405-417d-bd2a-63570f8a04e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaSkills/me/Jack/Methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaSkills/me/Jack/Methods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaSkills/me/Jack/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaSkills/me/Jack/Project.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/Jack/Assignments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/Jack/Assignments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/Jack/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/Jack/Methods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/Jack/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/Jack/Project.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -88,8 +89,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5804" />
-          <entry key="PLAIN_TEXT" value="248" />
+          <entry key="JAVA" value="7366" />
+          <entry key="PLAIN_TEXT" value="277" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -100,8 +101,8 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5804" />
-          <entry key="txt" value="248" />
+          <entry key="java" value="7366" />
+          <entry key="txt" value="277" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -119,13 +120,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/Jack/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="425">
+              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
               <folding>
                 <element signature="method#Project02#0;class#Project#0" />
                 <element signature="method#Project03#0;class#Project#0" />
+                <element signature="method#Project04#0;class#Project#0" />
                 <element signature="method#Project05#0;class#Project#0" />
                 <element signature="method#Project07#0;class#Project#0" />
+                <element signature="method#Project08#0;class#Project#0" />
                 <element signature="method#Project09#0;class#Project#0" />
                 <element signature="method#Project10#0;class#Project#0" />
                 <element signature="method#Project11#0;class#Project#0" />
@@ -137,8 +140,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/me/Jack/Assignments.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="408">
+              <caret line="344" column="10" selection-start-line="344" selection-start-column="10" selection-end-line="344" selection-end-column="10" />
+              <folding>
+                <element signature="method#Assignment12#0;class#Assignments#0" />
+                <element signature="method#Assignment14#0;class#Assignments#0" />
+                <element signature="method#Assignment19#0;class#Assignments#0" />
+                <element signature="method#Assignment20#0;class#Assignments#0" />
+                <element signature="method#Assignment21#0;class#Assignments#0" />
+                <element signature="method#Assignment22#0;class#Assignments#0" />
+                <element signature="method#Assignment24#0;class#Assignments#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -183,8 +195,8 @@
         <option value="$PROJECT_DIR$/src/Methods.java" />
         <option value="$PROJECT_DIR$/src/Project.java" />
         <option value="$PROJECT_DIR$/src/me/Jack/Methods.java" />
-        <option value="$PROJECT_DIR$/src/me/Jack/Project.java" />
         <option value="$PROJECT_DIR$/src/me/Jack/Assignments.java" />
+        <option value="$PROJECT_DIR$/src/me/Jack/Project.java" />
       </list>
     </option>
   </component>
@@ -227,7 +239,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546913097297" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546914927423" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../4976 Elevator Code/frc2018-power-up" />
   </component>
   <component name="RunDashboard">
@@ -377,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546911062390</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added Assignment 12">
+      <created>1546913116642</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1546913116642</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -429,7 +448,8 @@
     <MESSAGE value="Optimized Assignments 24 again" />
     <MESSAGE value="Finished Project 9j" />
     <MESSAGE value="Updated //Done statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated //Done statements" />
+    <MESSAGE value="Added Assignment 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Assignment 12" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -446,13 +466,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/Jack/Project.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="425">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
           <folding>
             <element signature="method#Project02#0;class#Project#0" />
             <element signature="method#Project03#0;class#Project#0" />
+            <element signature="method#Project04#0;class#Project#0" />
             <element signature="method#Project05#0;class#Project#0" />
             <element signature="method#Project07#0;class#Project#0" />
+            <element signature="method#Project08#0;class#Project#0" />
             <element signature="method#Project09#0;class#Project#0" />
             <element signature="method#Project10#0;class#Project#0" />
             <element signature="method#Project11#0;class#Project#0" />
@@ -462,8 +484,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/Jack/Assignments.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="408">
+          <caret line="344" column="10" selection-start-line="344" selection-start-column="10" selection-end-line="344" selection-end-column="10" />
+          <folding>
+            <element signature="method#Assignment12#0;class#Assignments#0" />
+            <element signature="method#Assignment14#0;class#Assignments#0" />
+            <element signature="method#Assignment19#0;class#Assignments#0" />
+            <element signature="method#Assignment20#0;class#Assignments#0" />
+            <element signature="method#Assignment21#0;class#Assignments#0" />
+            <element signature="method#Assignment22#0;class#Assignments#0" />
+            <element signature="method#Assignment24#0;class#Assignments#0" />
+          </folding>
         </state>
       </provider>
     </entry>

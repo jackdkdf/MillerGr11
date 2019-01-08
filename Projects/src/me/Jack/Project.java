@@ -21,7 +21,9 @@ public class Project {
         //p.Project12();
 
         //Assignments
-        a.Assignment12();
+        //a.Assignment12();
+        //a.Assignment21();
+        //a.Assignment22();
         //a.Assignment24();
     }
 
@@ -409,7 +411,6 @@ public class Project {
             }
 
         }
-
     }
 
     //Done
