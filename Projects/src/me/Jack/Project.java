@@ -7,6 +7,8 @@ public class Project {
     public static void main(String args[]){
         Project p = new Project();
         Assignments a = new Assignments();
+
+        //Projects
         //p.Project02();
         //p.Project03();
         //p.Project04();
@@ -14,11 +16,13 @@ public class Project {
         //p.Project06();
         //p.Project07();
         //p.Project08();
-        //p.Project09();
+        p.Project09();
         //p.Project10();
         //p.Project11();
         //p.Project12();
-        a.Assignment24();
+
+        //Assignments
+        //a.Assignment24();
     }
 
     //Done
@@ -372,7 +376,7 @@ public class Project {
 
     //Done
     public void Project09(){
-        int num, geusses = 0, guess;
+        int num, guesses = 0, guess;
         boolean playAgain = true;
 
         Scanner scanner = new Scanner(System.in);
@@ -393,11 +397,13 @@ public class Project {
                         System.out.println("Low");
                     }
                 }
+                guesses++;
             } else {
+                System.out.println("It took you " + guesses + " guesses.");
                 System.out.println("Do you want to play again? true or false");
-                if(scanner.nextBoolean() == true){
+                if(scanner.nextBoolean()){
                     playAgain = true;
-                } else if (scanner.nextBoolean() == false){
+                } else if (scanner.nextBoolean()){
                     playAgain = false;
                 }
             }
@@ -452,20 +458,22 @@ public class Project {
     }
 
     public void Project11(){
-        Scanner scanner = new Scanner(System.in);
-        Character yN;
-        do {
-            System.out.println ("Answer yes or no (Y or N)");
-            String temp = scanner.nextLine().toLowerCase();
-            yN = temp.charAt(0);
-            System.out.println(yN);
-            if (!yN.equals('y') && !yN.equals('n')){ System.out.println("That is not a valid answer\n"); }
+        boolean[] Doors = new boolean[101];
 
-            if(yN.equals('y')){
-                System.out.println("Cyka Blyat");
+        for (int i = 1; i < 101; i++) {
+            for (int j = 1; j < 101; j++) {
+                if (i % j == 0) {
+                    if(Doors[i]){
+                        Doors[i] = false;
+                    } else {
+                        Doors[i] = true;
+                    }
+                }
             }
-
-        } while (!yN.equals('y') && !yN.equals('n'));
+            if(Doors[i]){
+                System.out.println("Door " + i + " is open.");
+            }
+        }
     }
 
     public void Project12(){
