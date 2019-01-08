@@ -18,7 +18,7 @@ public class Project {
         //p.Project10();
         //p.Project11();
         //p.Project12();
-        a.Assignment22();
+        //a.Assignment24();
     }
 
     //Done
@@ -452,7 +452,20 @@ public class Project {
     }
 
     public void Project11(){
+        Scanner scanner = new Scanner(System.in);
+        Character yN;
+        do {
+            System.out.println ("Answer yes or no (Y or N)");
+            String temp = scanner.nextLine().toLowerCase();
+            yN = temp.charAt(0);
+            System.out.println(yN);
+            if (!yN.equals('y') && !yN.equals('n')){ System.out.println("That is not a valid answer\n"); }
 
+            if(yN.equals('y')){
+                System.out.println("Cyka Blyat");
+            }
+
+        } while (!yN.equals('y') && !yN.equals('n'));
     }
 
     public void Project12(){
