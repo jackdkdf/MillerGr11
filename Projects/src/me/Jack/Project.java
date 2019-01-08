@@ -1,7 +1,6 @@
 package me.Jack;
 
 import java.util.*;
-import me.Jack.Methods;
 
 public class Project {
     public static void main(String args[]){
@@ -22,6 +21,7 @@ public class Project {
         //p.Project12();
 
         //Assignments
+        a.Assignment12();
         //a.Assignment24();
     }
 
