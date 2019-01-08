@@ -18,7 +18,7 @@ public class Project {
         //p.Project10();
         //p.Project11();
         //p.Project12();
-        //a.Assignment24();
+        a.Assignment24();
     }
 
     //Done

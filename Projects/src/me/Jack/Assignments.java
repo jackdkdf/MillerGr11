@@ -15,13 +15,11 @@ public class Assignments {
                     }
                 }
             }
-        }
-
-        for(int i=1; i< 101; i++){
             if(Doors[i]){
                 System.out.println("Door " + i + " is open.");
             }
         }
+
     }
 
 }
