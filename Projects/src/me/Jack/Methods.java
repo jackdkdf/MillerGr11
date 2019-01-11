@@ -1,5 +1,7 @@
 package me.Jack;
 
+import java.util.Scanner;
+
 public class Methods {
 
     public static String padL(String string, int padding){
@@ -35,4 +37,32 @@ public class Methods {
             System.out.print("*");
         }
     }
+
+    public static void shoppingCartList(){
+        System.out.println("///////////////////////////////////////////////////////////////");
+        System.out.println("//Please enter 5 to list parts                               //");
+        System.out.println("//Please enter 6 to buy parts                                //");
+        System.out.println("//Please enter 7 to list your shopping cart                  //");
+        System.out.println("//Please enter 8 when you are done with your shopping cart   //");
+        System.out.println("///////////////////////////////////////////////////////////////");
+    }
+
+    public static void listCart(String[] sArray, int[] iArray, double[] dArray){
+        System.out.println("Part" + Methods.padL("Quantity", 16) + Methods.padL("Price", 7));
+        System.out.println("----" + Methods.padL("--------", 16) + Methods.padL("-----", 7));
+        for(int i=0; i<5; i++){
+            System.out.print(Methods.padR(sArray[i], 12));
+            System.out.print(Methods.padR("" + iArray[i], 10));
+            System.out.println(Methods.padR("$" + iArray[i] * dArray[i], 4));
+        }
+    }
+
+//    public static void buy(String product, Scanner scanner){
+//        System.out.println("Enter the amount of" + " " + product + " " + "you want to buy");
+//        int iInput = scanner.nextInt();
+//        quantity[CPU] += iInput;
+//        System.out.println(quantity[CPU]);
+//        stopbuying = true;
+//        Methods.shoppingCartList();
+//    }
 }

@@ -357,8 +357,6 @@ public class Assignments {
         System.out.println("Secret Letter");
 
         secretLetter = alphabet[r.nextInt(25)];
-        System.out.println(secretLetter);
-        System.out.println(points);
         do {
             guess = scanner.nextLine();
             for(int i = 0; i<guess.length(); i++){
@@ -373,12 +371,14 @@ public class Assignments {
             } else if(occurrences > 4){
                 System.out.println("You win!");
                 stop = true;
+                System.out.println(secretLetter);
             }
 
             occurrences = 0;
 
             if(points < 1){
                 System.out.println("You lose!");
+                System.out.println(secretLetter);
                 stop = true;
             }
 
@@ -411,4 +411,122 @@ public class Assignments {
         }
     }
 
+    public void Assignment26(){
+        Scanner scanner = new Scanner(System.in);
+        Boolean stop = false, stopbuying = false;
+        int CPU = 0, GPU = 1, cat = 2, dog = 3, Motherboard = 4;
+        int iInput;
+        double total = 0, HST = 0, shipping = 0;
+
+        int [] partNum = new int[5];
+
+        String [] name = new String[5];
+        name[0] = "CPU";
+        name[1] = "GPU";
+        name[2] = "Cat";
+        name[3] = "Dog";
+        name[4] = "Motherboard";
+
+        double [] price = new double[5];
+        price[CPU] = 9.99;
+        price[GPU] = 98.99;
+        price[cat] = 1.99;
+        price[dog] = 999.98;
+        price[Motherboard] = 0.99;
+
+        String [] desc = new String[5];
+        desc[CPU] = "CPU Priced by Alex";
+        desc[GPU] = "Best AMD 2001 GPU";
+        desc[cat] = "Normal Cat - Not fed";
+        desc[dog] = "Very good Dog - Fed well";
+        desc[Motherboard] = "Competitive Motherboard";
+
+        int [] quantity = new int[5];
+        for(int i=0; i<quantity.length; i++){
+            quantity[i] = 0;
+            partNum[i] = i;
+        }
+
+        Methods.shoppingCartList();
+
+        do{
+            double input = scanner.nextDouble();
+
+            //List of parts
+            if(input == 5){
+                System.out.println(Methods.padL("Part Number", 11) + Methods.padL("Description", 16) + Methods.padL("Price", 20));
+                System.out.println(Methods.padL("-----------", 11) + Methods.padL("-----------", 16) + Methods.padL("-----", 20));
+                for(int i = 0; i<partNum.length; i++) {
+                    System.out.print(Methods.padR(partNum[i] + "", 16));
+                    System.out.print(Methods.padR(desc[i] + " ", 25));
+                    System.out.println(Methods.padL(price[i] + "", 6));
+                }
+
+                //Shopping cart
+            } else if (input == 6){
+                do {
+                    System.out.println("Please enter the product number you wish to buy");
+                    iInput = scanner.nextInt();
+                    switch(iInput){
+                        case 0:
+                            System.out.println("Enter the amount of CPUs you want to buy");
+                            iInput = scanner.nextInt();
+                            quantity[CPU] += iInput;
+                            Methods.shoppingCartList();
+                            break;
+                        case 1:
+                            System.out.println("Enter the amount of GPUs you want to buy");
+                            iInput = scanner.nextInt();
+                            quantity[GPU] += iInput;
+                            Methods.shoppingCartList();
+                            break;
+                        case 2:
+                            System.out.println("Enter the amount of Cats you want to buy");
+                            iInput = scanner.nextInt();
+                            quantity[cat] += iInput;
+                            Methods.shoppingCartList();
+                            break;
+                        case 3:
+                            System.out.println("Enter the amount of Dogs you want to buy");
+                            iInput = scanner.nextInt();
+                            quantity[dog] += iInput;
+                            Methods.shoppingCartList();
+                            break;
+                        case 4:
+                            System.out.println("Enter the amount of Motherboards you want to buy");
+                            iInput = scanner.nextInt();
+                            quantity[Motherboard] += iInput;
+                            Methods.shoppingCartList();
+                            break;
+                    }
+                    stopbuying = true;
+                } while(!stopbuying);
+            } else if (input == 7){
+                Methods.listCart(name, quantity, price);
+                Methods.shoppingCartList();
+            } else if (input == 8){
+                Methods.listCart(name, quantity, price);
+                System.out.println("///////////////////////////");
+
+                //Calculates Total and HST
+                for(int i=0; i<5; i++){
+                    total += quantity[i] * price[i];
+                }
+
+                HST = total*0.13;
+                shipping = 7.5 + total * 0.1;
+                System.out.print(Methods.padR("Shipping + Handling", 22));
+                System.out.println("$" + shipping);
+                System.out.print(Methods.padR("HST (Tax):", 22));
+                System.out.println("$" + HST);
+                total += HST + shipping;
+                System.out.print(Methods.padR("Total:", 22));
+                System.out.println("$" + total);
+                stop = true;
+            } else {
+                System.out.println("Invalid number!");
+                Methods.shoppingCartList();
+            }
+        } while (!stop);
+    }
 }

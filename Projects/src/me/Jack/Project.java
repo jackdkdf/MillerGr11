@@ -25,6 +25,7 @@ public class Project {
         //a.Assignment21();
         //a.Assignment22();
         //a.Assignment24();
+        a.Assignment26();
     }
 
     //Done
