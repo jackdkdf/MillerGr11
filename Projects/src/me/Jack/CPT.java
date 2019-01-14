@@ -7,7 +7,8 @@ import java.io.FileReader;
 public class CPT {
 
     public void CPTLvl5() throws Exception{
-        File file = new File("C:\\Users\\jack\\Documents\\MillerGr11\\Projects\\src\\resources\\JohnWickNeedsYourHelp.txt");
+        File file = new File("C:\\Users\\jack\\Documents\\MillerGr11\\Projects\\src\\Easy.txt");
+        System.out.println(System.getProperty("user.dir"));
         BufferedReader br = new BufferedReader(new FileReader(file));
 
         String st;
