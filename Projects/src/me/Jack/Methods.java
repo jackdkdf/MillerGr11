@@ -1,6 +1,8 @@
 package me.Jack;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 
 public class Methods {
 
@@ -56,13 +58,4 @@ public class Methods {
             System.out.println(Methods.padR("$" + iArray[i] * dArray[i], 4));
         }
     }
-
-//    public static void buy(String product, Scanner scanner){
-//        System.out.println("Enter the amount of" + " " + product + " " + "you want to buy");
-//        int iInput = scanner.nextInt();
-//        quantity[CPU] += iInput;
-//        System.out.println(quantity[CPU]);
-//        stopbuying = true;
-//        Methods.shoppingCartList();
-//    }
 }

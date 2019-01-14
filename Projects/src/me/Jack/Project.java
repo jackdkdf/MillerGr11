@@ -3,9 +3,10 @@ package me.Jack;
 import java.util.*;
 
 public class Project {
-    public static void main(String args[]){
+    public static void main(String args[]) throws Exception{
         Project p = new Project();
         Assignments a = new Assignments();
+        CPT cpt = new CPT();
 
         //Projects
         //p.Project02();
@@ -25,7 +26,10 @@ public class Project {
         //a.Assignment21();
         //a.Assignment22();
         //a.Assignment24();
-        a.Assignment26();
+        //a.Assignment26();
+
+        //Performance Tasks
+        cpt.CPTLvl5();
     }
 
     //Done
