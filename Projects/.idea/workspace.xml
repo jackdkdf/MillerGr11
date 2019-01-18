@@ -4,12 +4,13 @@
     <bookmark url="file://$PROJECT_DIR$/src/me/Jack/Project.java" line="234" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="042f704c-4405-417d-bd2a-63570f8a04e3" name="Default Changelist" comment="">
+    <list default="true" id="042f704c-4405-417d-bd2a-63570f8a04e3" name="Default Changelist" comment="Did more work on CPT">
+      <change afterPath="$PROJECT_DIR$/src/CreditCardDetails.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaSkills/me/Jack/CPT.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaSkills/me/Jack/CPT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSkills/resources/JohnWickNeedsYourHelp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JohnWickNeedsYourHelp.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/Jack/CPT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/Jack/CPT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/Jack/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/Jack/Methods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/JohnWickNeedsYourHelp.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,12 +23,12 @@
     <favorites_list name="JavaSkills" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/Jack/CPT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="400">
+              <caret line="90" column="66" lean-forward="true" selection-start-line="90" selection-start-column="66" selection-end-line="90" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,41 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/me/Jack/Methods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/me/Jack/Assignments.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-              <folding>
-                <element signature="method#Assignment14#0;class#Assignments#0" />
-                <element signature="method#Assignment19#0;class#Assignments#0" />
-                <element signature="method#Assignment20#0;class#Assignments#0" />
-                <element signature="method#Assignment21#0;class#Assignments#0" />
-                <element signature="method#Assignment22#0;class#Assignments#0" />
-                <element signature="method#Assignment23#0;class#Assignments#0" />
-                <element signature="method#Assignment24#0;class#Assignments#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/me/Jack/Project.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+            <state relative-caret-position="171">
+              <caret line="83" column="72" selection-start-line="83" selection-start-column="72" selection-end-line="83" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -104,16 +75,16 @@
         <option value="$USER_HOME$/Downloads/Central.java" />
         <option value="$PROJECT_DIR$/src/Methods.java" />
         <option value="$PROJECT_DIR$/src/Project.java" />
-        <option value="$PROJECT_DIR$/src/me/Jack/Assignments.java" />
-        <option value="$PROJECT_DIR$/src/me/Jack/Methods.java" />
         <option value="$PROJECT_DIR$/src/me/Jack/Project.java" />
+        <option value="$PROJECT_DIR$/src/me/Jack/Assignments.java" />
         <option value="$PROJECT_DIR$/src/me/Jack/CPT.java" />
+        <option value="$PROJECT_DIR$/src/me/Jack/Methods.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="200" />
-    <option name="y" value="40" />
+    <option name="x" value="-10" />
+    <option name="y" value="24" />
     <option name="width" value="2800" />
     <option name="height" value="1560" />
   </component>
@@ -122,6 +93,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,21 +107,31 @@
               <item name="Projects" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projects" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Jack" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547487851230" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547851177295" />
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/frc2019-destination-deep-space" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jack\Documents\MillerGr11\Projects\src" />
+      <recent name="C:\Users\jack\Documents\MillerGr11\Projects\src\me\Jack" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -318,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547487226851</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Did more work on CPT">
+      <created>1547487876743</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1547487876743</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -326,16 +316,16 @@
     <editor active="true" />
     <layout>
       <window_info id="Learn" order="0" />
-      <window_info id="Structure" order="1" sideWeight="0.5273109" side_tool="true" visible="true" weight="0.23279743" />
+      <window_info id="Structure" order="1" sideWeight="0.5320197" side_tool="true" visible="true" weight="0.24244373" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5020408" side_tool="true" weight="0.25594854" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.47268906" visible="true" weight="0.23279743" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.4679803" visible="true" weight="0.24244373" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35935396" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4535666" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39838493" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -344,7 +334,6 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32839838" />
-      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24951768" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -353,6 +342,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven" order="8" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -371,7 +361,8 @@
     <MESSAGE value="Added Assignment 12" />
     <MESSAGE value="Added Assignment 26" />
     <MESSAGE value="CPT" />
-    <option name="LAST_COMMIT_MESSAGE" value="CPT" />
+    <MESSAGE value="Did more work on CPT" />
+    <option name="LAST_COMMIT_MESSAGE" value="Did more work on CPT" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -379,46 +370,46 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Downloads/Central.java" />
-    <entry file="file://$PROJECT_DIR$/src/me/Jack/Methods.java">
+    <entry file="file://$PROJECT_DIR$/src/me/Jack/Project.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-3063">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/Jack/Assignments.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="408">
+          <caret line="356" column="39" lean-forward="true" selection-start-line="356" selection-start-column="39" selection-end-line="356" selection-end-column="39" />
           <folding>
+            <element signature="method#Assignment12#0;class#Assignments#0" />
             <element signature="method#Assignment14#0;class#Assignments#0" />
             <element signature="method#Assignment19#0;class#Assignments#0" />
             <element signature="method#Assignment20#0;class#Assignments#0" />
+            <element signature="e#10430#10540#1" />
             <element signature="method#Assignment21#0;class#Assignments#0" />
-            <element signature="method#Assignment22#0;class#Assignments#0" />
+            <element signature="e#11129#11339#1" />
             <element signature="method#Assignment23#0;class#Assignments#0" />
             <element signature="method#Assignment24#0;class#Assignments#0" />
+            <element signature="method#Assignment26#0;class#Assignments#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/Jack/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/Jack/CPT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="400">
+          <caret line="90" column="66" lean-forward="true" selection-start-line="90" selection-start-column="66" selection-end-line="90" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/Jack/Methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="83" column="72" selection-start-line="83" selection-start-column="72" selection-end-line="83" selection-end-column="72" />
         </state>
       </provider>
     </entry>
