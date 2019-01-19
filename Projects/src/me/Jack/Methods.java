@@ -1,5 +1,7 @@
 package me.Jack;
 
+import java.text.DecimalFormat;
+
 public class Methods {
 
     public static String padL(String string, int padding){
@@ -55,34 +57,12 @@ public class Methods {
         }
     }
 
-    public static String underscoreCreator(int amount){
+    public static String underscoreCreator(int amount) {
         StringBuilder sb = new StringBuilder();
-        for(int i = 0; i<amount; i++){
+        for (int i = 0; i < amount; i++) {
             sb.append("_");
         }
         String st = sb.toString();
         return st;
-    }
-
-    public static void creditCardStatement(String creditCardNum, int statementClosingDate, double creditLine, double availCredit, String name){
-        clearChat(10);
-        String cardStatement = "\n"+
-                "   _____              _    _____ _        _                            _   \n"+
-                "  / ____|            | |  / ____| |      | |                          | |  \n"+
-                " | |     __ _ _ __ __| | | (___ | |_ __ _| |_ ___ _ __ ___   ___ _ __ | |_ \n"+
-                " | |    / _` | '__/ _` |  \\___ \\| __/ _` | __/ _ \\ '_ ` _ \\ / _ \\ '_ \\| __|\n"+
-                " | |___| (_| | | | (_| |  ____) | || (_| | ||  __/ | | | | |  __/ | | | |_ \n"+
-                "  \\_____\\__,_|_|  \\__,_| |_____/ \\__\\__,_|\\__\\___|_| |_| |_|\\___|_| |_|\\__|\n"+
-                "                                                                           \n";
-        System.out.println(cardStatement);
-        System.out.println("_______________________________________________________" + underscoreCreator(name.length()) + "_______");
-
-        //Account Number (Credit Card Number) and Name
-        System.out.print(Methods.padR("Account Number: ", 25) + Methods.padR(creditCardNum+ " ||", 35));
-        System.out.println(name);
-
-        //Statement Closing date and Street and the number of the street
-        System.out.println(Methods.padR("Statement Closing Date", 40) + Methods.padR(statementClosingDate + " ||", 35));
-
     }
 }
