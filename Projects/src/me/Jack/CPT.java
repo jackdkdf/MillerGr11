@@ -18,6 +18,16 @@ public class CPT {
     DecimalFormat df4 = new DecimalFormat("#.0000");
 
     public void CPTLvl5() throws Exception{
+
+        String asciiArt [] = new String [5];
+
+        asciiArt[0] = " _    __ ____ _____  ___ ";
+        asciiArt[1] = "| |  / //  _// ___/ /   |";
+        asciiArt[2] = "| | / / / /  \\__ \\ / /| |";
+        asciiArt[3] = "| |/ /_/ /  ___/ // ___ |";
+        asciiArt[4] = "|___//___/ /____//_/  |_|";
+
+
         //Declares a file path to read from
         File file = new File("C:\\Users\\Jack\\Documents\\Gr. 11 Programming\\Projects\\src\\CreditCardDetails.txt");
         BufferedReader br = new BufferedReader(new FileReader(file));
@@ -179,17 +189,17 @@ public class CPT {
                 Methods.clearChat(2);
                 System.out.println("ACCOUNT SUMMARY");
                 System.out.println("Previous Balance: " + Methods.padL("$" + prevBal.get(i), 26));
-                System.out.println("- Credits: " + Methods.padL("$" + df.format(credit), 33));
-                System.out.println("- Payments: " + Methods.padL("$" + df.format(payments), 32));
-                System.out.println("+ Purchases: " + Methods.padL("$" + df.format(purchases), 31));
-                System.out.println("+ Cash Advances: " + Methods.padL("$" + df.format(cashAdv), 27));
-                System.out.println("+ Interest: " + Methods.padL("$" + df.format(interest), 32));
+                System.out.println("- Credits: " + Methods.padL("$" + df.format(credit), 33) + Methods.padR("", 30) + asciiArt[0]);
+                System.out.println("- Payments: " + Methods.padL("$" + df.format(payments), 32) + Methods.padR("", 30) + asciiArt[1]);
+                System.out.println("+ Purchases: " + Methods.padL("$" + df.format(purchases), 31) + Methods.padR("", 30) + asciiArt[2]);
+                System.out.println("+ Cash Advances: " + Methods.padL("$" + df.format(cashAdv), 27) + Methods.padR("", 30) + asciiArt[3]);
+                System.out.println("+ Interest: " + Methods.padL("$" + df.format(interest), 32) + Methods.padR("", 30) + asciiArt[4]);
                 //Calculate the new balance (Subtracts the available credit from the Account's Line of Credit)
                 newBal = accCreditLimit.get(i) - availCredit;
                 System.out.println("= New Balance: " + Methods.padL("$" + df.format(newBal) , 29));
 
                 //Displays the Payment Information (New balance, minimum payment and the scheduled payment
-                System.out.println("PAYMENT INFORMATION");
+                System.out.println("\n\nPAYMENT INFORMATION");
                 System.out.println("New Balance: " + Methods.padL("$" + df.format(newBal), 31));
                 //Calculates if 5% is greater than 10 dollars
                 if(newBal * 0.05 > 10){
