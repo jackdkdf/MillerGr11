@@ -1,6 +1,9 @@
 package me.Jack;
 
 import java.text.DecimalFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Methods {
 
@@ -57,12 +60,23 @@ public class Methods {
         }
     }
 
-    public static String underscoreCreator(int amount) {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < amount; i++) {
-            sb.append("_");
-        }
-        String st = sb.toString();
-        return st;
+    // \/ Only method relevant to CPT \/
+
+    //Takes a string date (from my arraylist) and a date
+    public static int daysBetween(String sDate, Date d2) {
+        //Manipulates the arraylist string to a calendar and then to a date
+        int year = Integer.parseInt(sDate.substring(1, 5));
+        int month = Integer.parseInt(sDate.substring(5, 7));
+        int day = Integer.parseInt(sDate.substring(7, 9));
+        Calendar cal = new GregorianCalendar();
+        cal.set(Calendar.YEAR, year);
+        cal.set(Calendar.MONTH, month-1);
+        cal.set(Calendar.DAY_OF_MONTH, day);
+        //Converts the calendar into a date
+        Date d1 = cal.getTime();
+        //Does some nice old math I didn't have time to come up with myself so I had to google it, however I did the honours of adding the +1
+        //Calculates the time between two dates
+        return (int)( (d2.getTime() - d1.getTime()) / (1000 * 60 * 60 * 24)) + 1;
     }
+
 }
