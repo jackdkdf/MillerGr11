@@ -7,6 +7,8 @@ import java.util.GregorianCalendar;
 
 public class Methods {
 
+    static String path = "C:\\Users\\jack\\Documents\\MillerGr11\\Projects\\src\\";
+
     public static String padL(String string, int padding){
         return String.format("%1$" + padding + "s", string);
     }

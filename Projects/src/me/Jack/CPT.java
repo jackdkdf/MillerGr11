@@ -29,7 +29,7 @@ public class CPT {
 
 
         //Declares a file path to read from
-        File file = new File("C:\\Users\\Jack\\Documents\\Gr. 11 Programming\\Projects\\src\\CreditCardDetails.txt");
+        File file = new File(Methods.path + "CreditCardDetails.txt");
         BufferedReader br = new BufferedReader(new FileReader(file));
         //Declaring a temporary string called st and arraylists to store values dynamically
         String st;
