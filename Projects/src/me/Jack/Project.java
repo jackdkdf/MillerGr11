@@ -24,7 +24,7 @@ public class Project {
         //p.Project09();
         //p.Project10();
         //p.Project11();
-        p.Project12();
+        //p.Project12();
 
         //Assignments
         //a.Assignment12();
@@ -200,7 +200,7 @@ public class Project {
         System.out.println("Your fine is $" + (fine+5));
     }
 
-    //Done (On Apple Laptop)
+    //Done (On Mac)
     public void Project06(){}
 
     //Done for the most part
@@ -298,7 +298,7 @@ public class Project {
         System.out.println("$" + totalAmt + "." + cents);
     }
 
-    //Done (On Razer Laptop)
+    //Done
     public void Project08()  {
         int numE = 0, numi = 0, numI = 0, numVowels = 0;
 
@@ -488,7 +488,7 @@ public class Project {
         }
     }
 
-    //Not Done
+    //Done
     public void Project12() throws Exception{
         File file = new File(Methods.path + "ClassMarks.txt");
         BufferedReader br = new BufferedReader(new FileReader(file));
