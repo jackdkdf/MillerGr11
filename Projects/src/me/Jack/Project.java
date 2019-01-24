@@ -28,7 +28,7 @@ public class Project {
         //p.Project11();
         //p.Project12();
 
-        //Assignments
+        //Assignment
         //a.Assignment12();
         //a.Assignment21();
         //a.Assignment22();
@@ -36,7 +36,7 @@ public class Project {
         //a.Assignment26();
 
         //Performance Tasks
-        //cpt.CPTLvl5();
+        cpt.CPTLvl5();
     }
 
     //Done

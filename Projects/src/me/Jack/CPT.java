@@ -78,7 +78,7 @@ public class CPT {
                         int month = Integer.parseInt(sb.toString().substring(4, 6));
                         int day = Integer.parseInt(sb.toString().substring(6,8));
                         Calendar cal = new GregorianCalendar();
-                        cal.set(Calendar.YEAR, year);
+                         cal.set(Calendar.YEAR, year);
                         cal.set(Calendar.MONTH, month-1);
                         cal.set(Calendar.DAY_OF_MONTH, day);
                         statementClosingDate.add(cal);
